@@ -16,7 +16,8 @@ This Python project is originally corresponding to the PhD thesis:
                  Prof. Antonios Tsourdos
     
     Affiliation: Centre for AI, Robotics and Space, FEAS,
-                 Cranfield University
+                 Cranfield University, 
+                 United Kingdom
 
 Programming Language:
     Python 3.12
