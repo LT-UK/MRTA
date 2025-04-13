@@ -19,7 +19,7 @@ This Python project is originally corresponding to the PhD thesis:
                  Cranfield University
 
 Language:
-    Python 3.12 (other python versions )
+    Python 3.12
 
 
 The simulation scenario is based on a multi-target surveillance mission using multiple UAVs.
@@ -48,10 +48,15 @@ Some of the codes/comments are outdated, users of this repo may contact the auth
 
 
 ## Copyrights
+
 ** non-commercial use only **
+
 @author: Teng Li
+
 lt.uk@outlook.com
+
 United Kingdom
 
 All Rights Reserved
+
 For inquiries regarding commercial licensing, please contact the author.
