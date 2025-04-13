@@ -20,6 +20,9 @@ This Python project is corresponding to the PhD thesis:
 Language:
     Python 3.12
 
+
+
+** non-commercial use only **
 @author: Teng Li
 lt.uk@outlook.com
 United Kingdom

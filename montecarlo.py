@@ -40,6 +40,7 @@ import funcs.sys.progressbar as pb   # print progress bar
 # DSTA:     Decentralised Sample based Task Allocation
 # STTA:     Sample Threshold Task Allocation
 # STBTA:    Sample Threshold Bundle Task Allocation
+# auction_xx: auction based algorithms
 
 import funcs.algs.ga as ga         # TA alg: GA
 
