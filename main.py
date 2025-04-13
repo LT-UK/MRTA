@@ -18,11 +18,11 @@ This Python project is corresponding to the PhD thesis:
                  Cranfield University
 
 Language:
-    Python 3.11
+    Python 3.12
 
 @author: Teng Li
-lt.uk@outlook.com, teng.li@cranfield.ac.uk
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

@@ -7,8 +7,7 @@ Initialization for all algorithms.
 
 Caution! If any change occurs in this file, "Run selection or current line" 
 will also call the reloading of this file. Therefore, all parameters will be 
-reset. To use the output data again, call functions restoreSettings(path) and 
-restorePerformance(path) in funcs/sys/store.py.
+reset.
 
 @author: Teng Li
 tengli@cranfield.ac.uk; nliteng@foxmail.com
