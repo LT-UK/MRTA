@@ -32,7 +32,7 @@ Some of the codes/comments are outdated, users of this repo may contact the auth
 
 
 ## Algorithm list:
-(prefix 'L' represents 'Lazy')
+
 - GA:       Genetic Algorithm
 - SGA:      Sequencial Greedy Algorithm
 - CBBA:     Consensus Based Bundle Algorithm
@@ -44,8 +44,11 @@ Some of the codes/comments are outdated, users of this repo may contact the auth
 - DSTA:     Decentralised Sample based Task Allocation
 - STTA:     Sample Threshold Task Allocation
 - STBTA:    Sample Threshold Bundle Task Allocation
-- auction_xx: auction based algorithms
+- auction_xx: Auction based algorithms
 
+The prefix 'L' letter represents 'Lazy' version of these algorithm in this project.
+
+Algorithms proposed by the author: TGTA, DTTA, TBTA, T3A, TTBTA, DSTA, STTA, STBTA and their 'Lazy' versions.
 
 ## Copyrights
 
