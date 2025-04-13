@@ -1,6 +1,6 @@
 # MRTA
 A serial of multi-robot task allocation algorithms.
-Multi-agent systems, task/resource allocation.
+Multi-agent systems, task/resource allocation, submodular optimisation.
 
 ## Basic infomation
 
@@ -18,14 +18,13 @@ This Python project is originally corresponding to the PhD thesis:
     Affiliation: Centre for AI, Robotics and Space, FEAS,
                  Cranfield University
 
-Language:
+Programming Language:
     Python 3.12
 
 
-The simulation scenario is based on a multi-target surveillance mission using multiple UAVs.
-The utility function is submodular. 
+The simulation scenario is based on a multi-target surveillance mission using multiple UAVs where the utility function is submodular. 
 
-The proposed algorithms can provide a theoretical optimality guarantee.
+The proposed algorithms can provide a theoretical optimality guarantee. They can achieve comparable solution quality but are more efficient than benchmark algorithm.
 
 Please note that the algorithms are upgraded time to time according to reviewers comments. 
 Some of the codes/comments are outdated, users of this repo may contact the author if you enconter any bugs.
@@ -44,7 +43,7 @@ Some of the codes/comments are outdated, users of this repo may contact the auth
 - DSTA:     Decentralised Sample based Task Allocation
 - STTA:     Sample Threshold Task Allocation
 - STBTA:    Sample Threshold Bundle Task Allocation
-- auction_xx: Auction based algorithms
+- Auction_xx: Auction based algorithms
 
 The prefix 'L' letter represents 'Lazy' version of these algorithm in this project.
 
@@ -52,8 +51,7 @@ Algorithms proposed by the author: TGTA, DTTA, TBTA, T3A, TTBTA, DSTA, STTA, STB
 
 ## Copyrights
 
-** non-commercial use only **
-
+** non-commercial use only **<br>
 @author: Teng Li
 
 lt.uk@outlook.com
