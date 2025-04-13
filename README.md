@@ -1,5 +1,6 @@
 # MRTA
-A serial of multi-robot task allocation algorithms.
+A serial of multi-robot task allocation algorithms for performance comparison through simulations.
+
 Multi-agent systems, task/resource allocation, submodular optimisation.
 
 ## Basic infomation
