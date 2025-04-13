@@ -6,8 +6,8 @@ Created on Mon May 18 15:58:04 2020
 DSTA vs CBBA
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

@@ -9,8 +9,8 @@ The Spyder execution direct should be at the current address same with "data".
 Do NOT run whole file. 
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

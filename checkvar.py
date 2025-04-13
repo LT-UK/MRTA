@@ -4,8 +4,8 @@
 Created on Wed Jul  8 14:35:52 2020
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

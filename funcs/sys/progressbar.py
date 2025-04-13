@@ -6,8 +6,8 @@ Created on Mon May 18 15:50:41 2020
 Print progress bar in console panel. 
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 import time

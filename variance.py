@@ -8,8 +8,8 @@ Random task positions, task values, task-agent match fitness factors etc. are
 fixed.
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

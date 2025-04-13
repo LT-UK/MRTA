@@ -8,7 +8,7 @@ Task allocation algorithm:
 
 @author: Teng Li
 lt.uk@outlook.com; nliteng@foxmail.com
-Cranfield University, UK
+United Kingdom
 All Rights Reserved
 """
 

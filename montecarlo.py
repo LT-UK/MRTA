@@ -8,7 +8,7 @@ Random task positions, task values, task-agent match fitness factors.
 
 @author: Teng Li
 lt.uk@outlook.com
-Cranfield University, UK
+United Kingdom
 All Rights Reserved
 """
 

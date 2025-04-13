@@ -6,8 +6,8 @@ Created on Fri Oct 16 12:08:04 2020
 SGA vs CBBA vs T3A vs LT3A vs TTBTA
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

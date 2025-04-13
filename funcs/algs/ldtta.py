@@ -7,8 +7,8 @@ Task allocation algorithm:
     LDTTA: Lazy Decreasing Threshold Task Allocation
 
 @author: Teng Li
-tengli@cranfield.ac.uk; nliteng@foxmail.com
-Cranfield University, UK
+lt.uk@outlook.com
+United Kingdom
 All Rights Reserved
 """
 

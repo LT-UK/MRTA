@@ -7,7 +7,7 @@ SGA vs CBBA vs DTTA vs LDTTA vs TBTA
 
 @author: Teng Li
 teng.li@cranfield.ac.uk; nliteng@foxmail.com; lt.uk@outlook.com
-Cranfield University, UK
+United Kingdom
 All Rights Reserved
 """
 

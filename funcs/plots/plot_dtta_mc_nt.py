@@ -5,7 +5,7 @@ DTTA vs Benchmarks
 
 @author: Teng Li
 teng.li@cranfield.ac.uk; lt.uk@outlook.com
-Cranfield University, UK
+United Kingdom
 All Rights Reserved
 """
 
