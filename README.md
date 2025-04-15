@@ -54,8 +54,7 @@ Algorithms proposed by the author: TGTA, DTTA, TBTA, T3A, TTBTA, DSTA, STTA, STB
 ## Copyrights
 
 ** non-commercial use only **<br>
-@author: Teng Li <br>
+@programmer: Teng Li <br>
 lt.uk@outlook.com <br>
 United Kingdom <br>
 All Rights Reserved <br>
-For inquiries regarding commercial licensing, please contact the author.
