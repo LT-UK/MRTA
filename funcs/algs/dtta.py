@@ -7,7 +7,7 @@ Task allocation algorithm:
     DTTA: Decreasing Threshold Task Allocation
 
 @author: Teng Li
-lt.uk@outlook.com; nliteng@foxmail.com
+lt.uk@outlook.com;
 United Kingdom
 All Rights Reserved
 """
