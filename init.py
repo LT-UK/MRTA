@@ -415,21 +415,6 @@ class Algorithm:
                          capsize=eb_capsize,
                          label = self.label)
     
-#    def plotTradeoff_Eps_Vr_Evs(self):
-#        if self.en:
-#            self.evs_avg = [st.mean(self.evs[i]) 
-#                                    for i in range(len(Epses))]
-#            self.upper_error = [max(self.evs[i])-self.evs_avg[i] 
-#                            for i in range(len(Epses))]
-#            self.lower_error = [-min(self.evs[i])+self.evs_avg[i] 
-#                            for i in range(len(Epses))]
-#            self.error_evs = [self.lower_error, self.upper_error]
-#            plt.errorbar(Epses, self.evs_avg,
-#                         yerr=self.error_evs,
-#                         fmt=self.ls,
-#                         capsize=eb_capsize,
-#                         label = self.label)
-    
     def plotTradeoff_Eps_Vr_Evs(self): 
         if self.en:
             self.evs_avg = [st.mean(self.evs[i]) 

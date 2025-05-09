@@ -124,11 +124,6 @@ def runTradeoff_Eps_Vr():
                 init.X[j][i] = init.X[i][j]
     
     
-#    Tasks = [j for j in range(init.Nt)]   
-#    Agents = [a for a in range(init.Na)]  # Na: The number of Agents
-#    
-#    init.Dist_mat = [[0 for j in range(init.Nt)] for i in range(init.Nt)]
-    
     # Progress bar color options: RED, GREEN, ORANGE, BLUE, VIOLET, CYAN, GREY.
     bar_color = pb.colors.CYAN # (default: CYAN)
     start_time = time.time()

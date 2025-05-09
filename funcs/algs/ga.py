@@ -38,7 +38,6 @@ def mutation_swap(individual):
     '''
     Mutation by randomly swap two points.
     '''
-#    ind = [i for i in individual]
     ind = list(individual)
     len_chrom = len(ind)
     pos1, pos2 = np.random.randint(0, len_chrom-1, 2)
@@ -82,9 +81,6 @@ def runRandom(Agents, Tasks, ites):
     '''
     len_chrom = len(Tasks)
     total_values = []
-#    values = [0 for a in Agents] # Record the final function values for each agent.    
-    # Create the empty allocation for each agent start from empty set. The first number is agent id.
-#    selected = [[a] for a in Agents] 
     
     individual = list(np.random.randint(0, len(Agents), len_chrom))
     
@@ -108,7 +104,7 @@ def runGA(Agents, Tasks, pop_size, max_ite, Pr_mu):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int] the number of consensus steps
         n_evs: [int] the number of function evaluations
     '''
@@ -119,7 +115,7 @@ def runGA(Agents, Tasks, pop_size, max_ite, Pr_mu):
     
     len_chrom = len(Tasks)
     values = [0 for a in Agents] # Record the final function values for each agent.    
-#    remained = [list(Tasks) for a in Agents] # start from ground set   
+    
     # Create the empty allocation for each agent start from empty set. The first number is agent id.
     selected = [[a] for a in Agents] 
     population = [] # 2D list containing all individuals.
@@ -139,7 +135,6 @@ def runGA(Agents, Tasks, pop_size, max_ite, Pr_mu):
             
     # Iterations
     for ite in range(max_ite):
-        
         # Randomly select two ids of individuals as parents for Crossover
         p1_id, p2_id = np.random.randint(0, pop_size, 2)
         # Get two offspring ids.
@@ -193,7 +188,7 @@ def runGA_Tune(Agents, Tasks, pop_size, max_ite, Pr_mu):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int] the number of consensus steps
         n_evs: [int] the number of function evaluations
         max_utilities: [list] The maximum function utilities in each iteration.
@@ -207,7 +202,7 @@ def runGA_Tune(Agents, Tasks, pop_size, max_ite, Pr_mu):
     
     len_chrom = len(Tasks)
     values = [0 for a in Agents] # Record the final function values for each agent.    
-#    remained = [list(Tasks) for a in Agents] # start from ground set   
+
     # Create the empty allocation for each agent start from empty set. The first number is agent id.
     selected = [[a] for a in Agents] 
     population = [] # 2D list containing all individuals.
@@ -224,8 +219,6 @@ def runGA_Tune(Agents, Tasks, pop_size, max_ite, Pr_mu):
         n_evs += evs
         pop_values.append(values_ind) # Record the value of each agent for the current individual.
         pop_utilities.append(total_value) # Record the total value for the current individual.
-        # Record the maximum function utility.
-#        max_utilities.append(np.max(pop_utilities))
             
     # Iterations
     for ite in range(max_ite):

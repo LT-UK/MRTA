@@ -92,12 +92,7 @@ def runTradeOff_Pr():
     init.Dist_AT = [[0 for j in Tasks] for a in Agents]        
     for a in Agents:
         for j in Tasks:
-            init.Dist_AT[a][j] = np.round(vf.getDistAT(a, j, Agents_pos, Tasks_pos), 3)
-    
-    # Na is not in settings.py, unlike Nt
-#    Agents_pos = [
-#            [round(x,3) for x in np.random.uniform(low=0.0, high=init.L, size=Na)], 
-#            [round(y,3) for y in np.random.uniform(low=0.0, high=init.L, size=Na)]]       
+            init.Dist_AT[a][j] = np.round(vf.getDistAT(a, j, Agents_pos, Tasks_pos), 3)   
     
     # get the distance matrix of all tasks
     for i in range(init.Nt-1):

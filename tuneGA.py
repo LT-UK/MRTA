@@ -178,14 +178,6 @@ def plotTuneGA_Integrate_Variance(Alg, Alg_utility, Alg_evs, max_utilities, GA_e
                  fmt=eb_fmt,
                  capsize=eb_capsize,
                  label = eb_label)
-    
-#    plt.errorbar(Alg_evs_avg,
-#                 Alg_utility_avg,
-##                 yerr=yerr_utilities,
-#                 xerr=xerr_evs,
-#                 fmt=eb_fmt,
-#                 capsize=eb_capsize,
-#                 label = eb_label)
 
     plt.xlabel("Function Evaluations (x$10^"+str(init.evs_scale)+"$)")
     plt.ylabel("Function Utility")
@@ -251,18 +243,6 @@ if __name__ == "__main__":
                  ]
 #    Non-monotone:
     else:
-        # random importance factors
-#        init.V = [round(v,3) for v in 
-#                  np.random.uniform(low=init.v_low, 
-#                                    high=init.v_high, 
-#                                    size=init.Nt)
-#                  ]
-        # random task-agent match fitness factors
-        #    M = np.random.uniform(m_low,m_high,(Na,Nt))
-#        init.M = [[round(m,3) for m in 
-#                   np.random.uniform(init.m_low,init.m_high,init.Nt)] 
-#                    for a in range(init.Na)
-#                 ]
 #        # special tasks
         v1 = [round(v,3) for v in 
               np.random.uniform(low=init.vs_low, 
@@ -381,29 +361,19 @@ if __name__ == "__main__":
 #        plotTuneGA('DSTA', Alg_utility_max, Alg_evs_max, max_utilities, GA_evs)
 #        plotTuneGA('STTA', Alg_utility_avg, Alg_evs_avg, max_utilities, GA_evs)
         plotTuneGA_Integrate_Variance('STTA', Alg_utilities, Alg_evs, max_utilities, GA_evs)
-    
-#    if init.DSTA.en:
-#        selected, values, total_value, dt, steps, evs \
-#                        = dsta.runDSTA(Agents,Tasks,init.Pr)
-#        Alg_utility = [total_value for i in range(len(max_utilities))]
-#        Alg_evs = [evs/10**init.evs_scale for i in range(len(max_utilities))]
-#        plotTuneGA('DSTA', Alg_utility, Alg_evs, max_utilities, GA_evs)
 
 
 #    Print utility% and milestones
     if init.DSTA.en or init.STTA.en:
         final_ratio = utility_avg/max_utilities[-1]
-        
         suppass = getSuppass(max_utilities, utility_avg)
         convergence = getConvergence(max_utilities)
         GA_evs[suppass]
         GA_evs[convergence]
         Alg_evs_avg[0]
         max_utilities[-1]
-    #    Alg_utility_avg[0]
         Alg_utility_avg = [st.mean(Alg_utilities)]
         Alg_evs_avg = [st.mean(Alg_evs)]
-        
         suppass = getSuppass(max_utilities, total_value)
     else:
         final_ratio = total_value/max_utilities[-1]

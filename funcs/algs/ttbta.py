@@ -38,7 +38,7 @@ def runTTBTA(Agents, Tasks, k, eps):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int] the number of consensus steps
         n_evs: [int] the number of function evaluations
     '''
@@ -96,6 +96,7 @@ def runTTBTA(Agents, Tasks, k, eps):
     bundle_js = [[] for a in Agents]
         
     # main loop
+    # TODO: Update main loop considering buffers
     while theta >= final_threshold:
         flag_agent = [1 for a in Agents] # Stop flag for each agent with the current theta
         # If no element is larger than theta, then stop searching under this threshold.

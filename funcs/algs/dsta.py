@@ -31,7 +31,7 @@ def runDSTA(Agents, Tasks, Pr):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int+] the number of consensus steps
         n_evs: [int+] the number of function evaluations
     '''

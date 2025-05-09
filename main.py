@@ -20,8 +20,6 @@ This Python project is corresponding to the PhD thesis:
 Language:
     Python 3.12
 
-
-
 ** non-commercial use only **
 @author: Teng Li
 lt.uk@outlook.com
@@ -65,12 +63,12 @@ import funcs.plots.plot_dtta_mc_nt as plot_dtta_mc_nt      # plot figures for DT
 
 # ====================== Set TA parameters between here =======================
 
-init.Nt = 300    # number of tasks 200, 60, 50   200 tasks too slow
+init.Nt = 300   # number of tasks 200, 60, 50   
 init.evs_scale = 3  # scale in plot figures, scale = 10**evs_scale
 
-init.Na = 100 # 12 or 4, fixed number of agents for tradeoffs 15 for DSTA
+init.Na = 100   # 12 or 4, fixed number of agents for tradeoffs 15 for DSTA
 
-init.L = 10.0       # /km  The length of the 2-D space.
+init.L = 10.0   # km  The length of the 2-D space.
 init.ro = 20.0  # km  The radius of the operation range of satellites in Satellite surveiliance missions
 
 # value factors of the normal tasks
@@ -87,7 +85,7 @@ init.m_high = 1.0   # 1.0
 init.ms_low = 0.1   # 0.1
 init.ms_high = 0.2  # 0.2
 
-init.d_0 = 1        # /km characteristic distance
+init.d_0 = 1        # km characteristic distance
 
 init.lambda_x = 0.01     # penalty scaling factor in the non-monotone case
 
@@ -96,11 +94,11 @@ init.eps = 0.1      # epsilon, decreasing threshold parameter
 init.rho = 1        # truncation parameter
 
 # GA parameters
-init.max_ite = 500 # The maximum number of iterations.
+init.max_ite = 500  # The maximum number of iterations.
 init.pop_size = 20  # Population size.
-init.Pr_mu = 0.5   # The probability of mutation.
+init.Pr_mu = 0.5    # The probability of mutation.
 
-init.MC_ctr = 20     # The number of Monte Carlo loops.
+init.MC_ctr = 20    # The number of Monte Carlo loops.
 
 init.Na_start = 100   # 10, 4
 init.Na_end = 101    # 51, 21
@@ -130,7 +128,6 @@ init.AuctionSequential.en = 0
 init.AuctionParallel.en = 0
 init.AuctionGPrim.en = 0
 
-
 init.SGA.en = 1
 init.LSGA.en = 0
 
@@ -159,7 +156,7 @@ init.STBTA.en = 0
 
 init.monotonicity = 1    # 1: monotone 0: non-monotone
 
-# Do NOT enable any two of the followings at the same time.
+# !!!Do NOT enable any two of the followings at the same time!!!
 montecarlo_en = 1
 
 montecarlo_nt_en = 0
@@ -239,7 +236,7 @@ if __name__ == "__main__":
         plot_tradeoff_Truncation.plotTradeoff_Rho()
         
     # ----------------- Log data -----------------
-    
+    # TODO: Save results to csv 
     # GA
     if init.GA.en:
         GA_steps = init.GA.steps

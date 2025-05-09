@@ -4,7 +4,7 @@
 Created on Mon May 18 15:58:04 2020
 
 Task allocation algorithm: 
-    Sequencial Auction Algorithm
+    Sequential Auction Algorithm
 
 @author: Teng Li
 lt.uk@outlook.com
@@ -21,7 +21,7 @@ import funcs.vfunc.vf as vf   # value function and getMGV
 # =============================================================================
 def runAuctionSequential(Agents, Tasks):
     '''
-    Sequencial Auction Algorithm for Task Allocation.
+    Auction-Sequential Algorithm for Task Allocation.
     Input:    
         Agents: [list] all agents' ids
         Tasks: [list] all tasks' ids
@@ -29,7 +29,7 @@ def runAuctionSequential(Agents, Tasks):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int+] the number of consensus steps
         n_evs: [int+] the number of function evaluations
     '''

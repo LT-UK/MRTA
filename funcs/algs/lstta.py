@@ -32,7 +32,7 @@ def runLSTTA(Agents, Tasks, Pr, eps):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int] the number of consensus steps
         n_evs: [int] the number of function evaluations
     '''
@@ -87,6 +87,7 @@ def runLSTTA(Agents, Tasks, Pr, eps):
     final_threshold = eps/r*d
     
     # main loop
+    # TODO: Update main loop considering buffers
     while theta >= final_threshold:
         flag_agent = [1 for a in Agents] # stop flag for each agent
         # If no element is larger than the current threshold theta, then stop searching under this threshold.

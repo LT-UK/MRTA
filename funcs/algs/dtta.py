@@ -30,7 +30,7 @@ def runDTTA(Agents, Tasks, eps):
         selected: [list 2D] selected tasks' ids by each agent 
         values: [list] function value for each agent
         total_value: [float] total function value i.e. sum of all individual agent's function value
-        dt: [float] consuming time /sec
+        dt: [float] consuming time, unit: sec
         consensus_steps: [int] the number of consensus steps
         n_evs: [int] the number of function evaluations
     '''
@@ -54,16 +54,13 @@ def runDTTA(Agents, Tasks, eps):
         mgvs = []
         for j in remained[a]:
             mgvs.append(vf.getMGV(j,selected[a],Tasks))
-            # n_evs += 1
         local_max_mgvs.append(np.max(mgvs))
         local_max_js.append(remained[a][np.argmax(mgvs)])
     global_max_mgv = np.max(local_max_mgvs)
-    # agent_id = np.argmax(local_max_mgvs) # find the agent that win the bid
-    # global_max_j = local_max_js[agent_id] # find the element that helps to win the bid
+
     d = global_max_mgv
     theta = d # initial threshold
     final_threshold = eps/r*d
-    
     
     # main loop
     while theta >= final_threshold:
@@ -103,7 +100,6 @@ def runDTTA(Agents, Tasks, eps):
             for j in considered:
                 remained_theta[a].remove(j)
                 
-
         # Update Omega
         for a in Agents:
             for j in J:
@@ -117,9 +113,7 @@ def runDTTA(Agents, Tasks, eps):
         for a in Agents:
             if Omega[a]:
                 omega_n_max = max(omega_n_max, max(Omega[a]))
-        # if A:  # len(A) > 0
-        #     consensus_steps += 1 # new consensus round
-            # If no agent can provide an eligible task, then consensus is not required.
+
         consensus_steps += 1 # new consensus round
         
         if J: # J not empty         
@@ -135,30 +129,14 @@ def runDTTA(Agents, Tasks, eps):
                         remained[a].remove(j)
                     if j in remained_theta[a]:
                         remained_theta[a].remove(j)
-                        
-            # stop_flag = 1
-            # for a in Agents:
-            #     if remained[a]:  # If anyone not empty, don't stop main loop.
-            #         stop_flag = 0 
-            #         break
-            # if stop_flag:
-            #     break # stop the main loop  
                   
         else:
             # If the remained sets are empty for all agents, stop the main loop.
-            # stop_flag = 1
-            # for a in Agents:
-            #     if remained[a]:  # If anyone not empty, don't stop main loop.
-            #         stop_flag = 0 
-            #         break
-            # if stop_flag:
-            #     break # stop the main loop  
             if omega_n_max == 0:
                 break
-            # go to next threshold     
-            # theta *= (1 - eps) 
+                 
             while theta > omega_n_max:
-                theta *= (1 - eps) 
+                theta *= (1 - eps) # go to next threshold
             for a in Agents:
                 if Omega[a] and max(Omega[a]) < theta:
                     remained_theta[a] = []

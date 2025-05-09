@@ -9,6 +9,8 @@ United Kingdom
 All Rights Reserved
 """
 
+# This file is used for testing only.
+
 p = np.arange(0.75,1.0,0.05)
 
 X = [(1/p[i]**2-1)*st.mean(init.DSTA.utilities[i+14])**2-Var[i+14] for i in range(len(p))]

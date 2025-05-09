@@ -108,11 +108,7 @@ def runTradeoff_Eps():
                     [round(x,3) for x in 
                      np.random.uniform(low=0.0, high=init.L, size=init.Nt)], 
                     [round(y,3) for y in 
-                     np.random.uniform(low=0.0, high=init.L, size=init.Nt)]]
-            # Na is not in settings.py, unlike Nt
-#            Agents_pos = [
-#                    [round(x,3) for x in np.random.uniform(low=0.0, high=init.L, size=Na)], 
-#                    [round(y,3) for y in np.random.uniform(low=0.0, high=init.L, size=Na)]]       
+                     np.random.uniform(low=0.0, high=init.L, size=init.Nt)]]    
             
             # get the distance matrix of all tasks
             for i in range(init.Nt-1):
