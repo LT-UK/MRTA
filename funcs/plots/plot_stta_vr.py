@@ -31,6 +31,32 @@ eb_capsize_line = 4
 eb_capsize_bar = 2
 #eb_label = "STTA"
 
+# plt.rcParams.update({
+#     'font.size': 14,        # Default text size
+#     'axes.titlesize': 16,   # Title font size
+#     'axes.labelsize': 14,   # X/Y label font size
+#     'xtick.labelsize': 12,  # X-tick labels
+#     'ytick.labelsize': 12,  # Y-tick labels
+#     'legend.fontsize': 12   # Legend text
+# })
+
+plot_size_text   = 16
+plot_size_legend = 14
+plot_size_axes_title = 14
+plot_size_axes_label = 16
+plot_size_tick = 16
+
+plt.rcParams.update({
+    'font.size': plot_size_text,        # Default text size
+    'axes.titlesize': plot_size_axes_title,   # Title font size
+    'axes.labelsize': plot_size_axes_label,   # X/Y label font size
+    'xtick.labelsize': plot_size_tick,  # X-tick labels
+    'ytick.labelsize': plot_size_tick,  # Y-tick labels
+    'legend.fontsize': plot_size_legend   # Legend text
+})
+
+plt.tight_layout()
+
 
 def plotSTTA_Vr():
     # Draw figures
@@ -45,6 +71,7 @@ def plotSTTA_Vr():
     init.STBTA.plotVariance_Utilities()
     # Plot figure
     plt.xlabel("$N_a$")
+    # plt.xlabel("$|\mathcal{A}|$")
     plt.ylabel("Function Utility")
     plt.legend(loc = 'lower right')
     plt.ylim(bottom=0)
@@ -640,7 +667,7 @@ def plotSTTA_Vr_Box():
     
     bp3 = plt.boxplot(init.STTA.utilities, 
                      positions=np.array(range(len(init.STTA.utilities)))*2.0, 
-                     sym='', widths=0.4)
+                     sym='', widths=0.3)
     set_box_color(bp3, 'c')
     plt.plot([], c='c', label='STTA')
     
@@ -665,10 +692,12 @@ def plotSTTA_Vr_Box():
 #    plt.plot(init.Prs, init.CBBA.utilities, init.Linestyle.ls_CBBA, label = init.Label.lb_CBBA)
 #    plt.axhline(init.CBBA.utilities[0], c = "Red", label = init.Label.lb_CBBA)
 #    plt.abline(h=init.CBBA.utilities[0], col = "Red")
-    plt.xlabel("$N_a$")
+    # plt.xlabel("$N_a$")
+    plt.xlabel("$|\mathcal{A}|$")
     plt.ylabel("Function Utility")
     plt.legend(loc = 'lower right')
     plt.ylim(ymin=0)
+    plt.tight_layout(pad=0.2)
     if init.monotonicity:
         plt.savefig(output_path_mono+'STTA_utility_mono_vr_box.pdf')
     else:
@@ -697,7 +726,7 @@ def plotSTTA_Vr_Box():
     STTA_evs = [[init.STTA.evs[i][j]/10**init.evs_scale for j in range(len(init.STTA.evs[i]))] for i in range(len(init.STTA.evs))]
     bp3 = plt.boxplot(STTA_evs, 
                      positions=np.array(range(len(init.STTA.evs)))*2.0, 
-                     sym='', widths=0.4)
+                     sym='', widths=0.3)
     set_box_color(bp3, 'c')
     plt.plot([], c='c', label='STTA')
     
@@ -705,10 +734,12 @@ def plotSTTA_Vr_Box():
     plt.xticks(range(0, len(ticks) * 2, 2), ticks)
     plt.xlim(-1, len(ticks)*2-1)
     plt.ylim(bottom=0)
-    plt.xlabel("$N_a$")
+    # plt.xlabel("$N_a$")
+    plt.xlabel("$|\mathcal{A}|$")
     plt.ylabel("Function Evaluations (x$10^"+str(init.evs_scale)+"$)")
     plt.legend(loc = 'upper left')
     plt.ylim(ymin=0)
+    plt.tight_layout(pad=0.2)
     if init.monotonicity:
         plt.savefig(output_path_mono+'STTA_evs_mono_vr_box.pdf')
     else:
@@ -736,7 +767,7 @@ def plotSTTA_Vr_Box():
     
     bp3 = plt.boxplot(init.STTA.steps, 
                      positions=np.array(range(len(init.STTA.steps)))*2.0, 
-                     sym='', widths=0.4)
+                     sym='', widths=0.3)
     set_box_color(bp3, 'c')
     plt.plot([], c='c', label='STTA')
     
@@ -744,10 +775,13 @@ def plotSTTA_Vr_Box():
     plt.xticks(range(0, len(ticks) * 2, 2), ticks)
     plt.xlim(-1, len(ticks)*2-1)
     plt.ylim(bottom=0)
-    plt.xlabel("$N_a$")
+    # plt.xlabel("$N_a$")
+    plt.xlabel("$|\mathcal{A}|$")
     plt.ylabel("Consensus Steps")
-    plt.legend(loc = 'lower left')
+    # plt.legend(loc = 'lower left')
+    plt.legend(loc = 'lower right')
     plt.ylim(ymin=0)
+    plt.tight_layout(pad=0.2)
     if init.monotonicity:
         plt.savefig(output_path_mono+'STTA_steps_mono_vr_box.pdf')
     else:
