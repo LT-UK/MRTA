@@ -157,9 +157,9 @@ init.STBTA.en = 0
 init.monotonicity = 1    # 1: monotone 0: non-monotone
 
 # !!!Do NOT enable any two of the followings at the same time!!!
-montecarlo_en = 1
+montecarlo_en = 0
 
-montecarlo_nt_en = 0
+montecarlo_nt_en = 1
 
 variance_en = 0
 
