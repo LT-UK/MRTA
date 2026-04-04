@@ -36,7 +36,19 @@ The prefix 'L' letter represents 'Lazy' version of these algorithm in this proje
 
 Algorithms proposed by the author: TGTA, DTTA, TBTA, T3A, TTBTA, DSTA, STTA, STBTA and their 'Lazy' versions.
 
-Algorithms to be updated: TGTA, TBTA, T3A, TTBTA, STBTA
+Algorithms to be updated: TGTA, TBTA, T3A, TTBTA, STBTA.
+
+Algorithm files are located in "func/algs/".
+
+
+## How to Run Simulations
+main.py
+
+1. Set simulation scenario parameters such as number of tasks and agents, number of Monte Carlo runs etc.
+2. Enable the algorithms for simulation by setting "init.XXX.en" to 1.
+3. Select the mission scenario: montecarlo, variance, tradeoff (Only select one).
+4. Adjust plot functions in "__main__".
+5. Run the entire project.
 
 
 ## Contributors:
