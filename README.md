@@ -6,7 +6,7 @@ Multi-agent systems, task/resource allocation, submodular optimisation.
 ## Basic infomation
 
 Programming Language:
-    Python 3.12
+    Python 3.12+
 
 
 The simulation scenario is based on a multi-target surveillance mission using multiple UAVs where the utility function is submodular. 
@@ -47,6 +47,12 @@ If you would like to merge your updates into the main branch, please create a pu
 - Use multi-thread and timer for the progress bar updates.
 - Update all threshold related algorithms with buffers (refer to DTTA).
 
+
+## Citations
+- DTTA: Li, Teng, Hyo-Sang Shin, and Antonios Tsourdos. "Efficient Decentralised Parallel Task Allocation for Multiple Robots." IEEE Transactions on Robotics (2025).
+- DSTA: Shin, H.S., Li, T., Lee, H.I. and Tsourdos, A., 2022. Sample greedy based task allocation for multiple robot systems. Swarm Intelligence, 16(3), pp.233-260.
+
+
 ## Copyrights
 
 ** non-commercial use only **<br>
@@ -54,3 +60,6 @@ If you would like to merge your updates into the main branch, please create a pu
 lt.uk@outlook.com <br>
 United Kingdom <br>
 All Rights Reserved <br>
+
+
+
