@@ -43,14 +43,18 @@ Algorithms to be updated: TGTA, TBTA, T3A, TTBTA, STBTA
 Welcom to contribute to this repo. You can create a branch and make updates to codes. 
 If you would like to merge your updates into the main branch, please create a pull request. We will review your updates and merge necessary functionalities.
 
-### TODO list
+## TODO list
 - Use multi-thread and timer for the progress bar updates.
 - Update all threshold related algorithms with buffers (refer to DTTA).
 
 
 ## Citations
-- DTTA: Li, Teng, Hyo-Sang Shin, and Antonios Tsourdos. "Efficient Decentralised Parallel Task Allocation for Multiple Robots." IEEE Transactions on Robotics (2025).
-- DSTA: Shin, H.S., Li, T., Lee, H.I. and Tsourdos, A., 2022. Sample greedy based task allocation for multiple robot systems. Swarm Intelligence, 16(3), pp.233-260.
+
+### DTTA
+Li, Teng, Hyo-Sang Shin, and Antonios Tsourdos. "Efficient Decentralised Parallel Task Allocation for Multiple Robots." IEEE Transactions on Robotics (2025).
+
+### DSTA
+Shin, H.S., Li, T., Lee, H.I. and Tsourdos, A., 2022. Sample greedy based task allocation for multiple robot systems. Swarm Intelligence, 16(3), pp.233-260.
 
 
 ## Copyrights
